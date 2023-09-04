@@ -6,7 +6,8 @@ import ForgotOTPVerification from "@/pages/auth/ForgotOTPVerification";
 import ResetPassword from "@/pages/auth/ResetPassword";
 import Register from "@/pages/auth/Register";
 import CompanyList from "@/pages/admin/Company/CompanyList";
-import OfficesList from "@/pages/admin/offices/OfficesList";
+import OfficesList from "@/pages/admin/Offices/OfficesList";
+import EmployeeList from "@/pages/admin/Employee/EmployeeList";
 
 export const AuthRoutes = [
   {
@@ -42,6 +43,21 @@ export const RoutesPath = [
     name: "Home",
     element: Home,
   },
+  {
+    path: "admin/company",
+    name: "Company Listing",
+    element: CompanyList,
+  },
+  {
+    path: "admin/company/office/:id",
+    name: "Office Listing",
+    element: OfficesList,
+  },
+  {
+    path: "admin/employee",
+    name: "Employee Listing",
+    element: EmployeeList,
+  },
 ];
 
 export const AdminPath = [
@@ -49,17 +65,7 @@ export const AdminPath = [
     path: "/admin/dashboard",
     name: "Admin Dashboard",
     element: Home,
-  },
-  {
-    path: "/admin/company",
-    name: "Company Listing",
-    element: CompanyList,
-  },
-  {
-    path: "/admin/Office-List",
-    name: "office Listing",
-    element: OfficesList,
-  },
+  }
 ];
 
 export const routeMatch = {

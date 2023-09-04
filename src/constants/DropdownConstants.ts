@@ -7,7 +7,7 @@ import {
   SidebarEmployees,
   SidebarHome,
   SidebarMedical,
-  SidebarRequests,
+  RoundUserIcon,
   SidebarSetup,
   SidebarTimesheets,
   TruckIcon,
@@ -123,15 +123,41 @@ export const MenuList = [
     subMenu: false,
   },
   {
+    name: "Visitor",
+    link: "#",
+    icon: RoundUserIcon,
+    subMenu: true,
+    subMenuList: [
+      {
+        name: "List",
+        id: "visitor",
+        link: "admin/visitor",
+      },
+    ],
+  },
+  {
     name: "Admin",
-    link: "#!",
+    link: "#",
     icon: SidebarAdmin,
     subMenu: true,
     subMenuList: [
       {
-        name: "Roles",
-        id: "roles",
-        link: "/admin/roles",
+        name: "",
+        id: "user",
+        link: "admin/user",
+      },
+    ],
+  },
+  {
+    name: "Company",
+    link: "#",
+    icon: SidebarContracts,
+    subMenu: true,
+    subMenuList: [
+      {
+        name: "List",
+        id: "company-list",
+        link: "/admin/company",
       },
     ],
   },
