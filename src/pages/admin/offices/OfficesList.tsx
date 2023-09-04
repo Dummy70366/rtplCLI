@@ -5,7 +5,7 @@ import {
   currentPageCount,
   currentPageSelector,
 } from "@/redux/slices/paginationSlice";
-import { GetAllOfficesById,DeletOffice,EditOfficeData } from "@/services/companyService";
+import { GetAllOfficesById,DeletOffice,EditOfficeData } from "@/services/CompanyService";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import AddUpdateCompany from "../Company/AddUpdateCompany";
